@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html>
+<title>Menu</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Amatic+SC">
+<style>
+body, html {height: 100%}
+body,h1,h2,h3,h4,h5,h6 {font-family: "Amatic SC", sans-serif}
+.menu {display: none}
+.bgimg {
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 90%;
+}
+</style>
+<style>
+@import url(https://fonts.googleapis.com/css?family=Open+Sans);
+@import url(https://fonts.googleapis.com/css?family=Bree+Serif);
+#container {
+	margin: 0 auto;
+}
+
+p {
+	text-align: center;
+}
+
+nav {
+	margin: 50px 0;
+	background-color: #e61919;
+}
+
+nav ul {
+	padding: 0;
+  margin: 0;
+	list-style: none;
+	position: relative;
+	}
+	
+nav ul li {
+	display:inline-block;
+	background-color: #e61919;
+	}
+
+nav a {
+	display:block;
+	padding:0 10px;	
+	color:#FFF;
+	font-size:20px;
+	line-height: 60px;
+	text-decoration:none;
+}
+
+nav a:hover { 
+	background-color: #000000; 
+}
+
+/* Hide Dropdowns by Default */
+nav ul ul {
+	display: none;
+	position: absolute; 
+	top: 60px; /* the height of the main nav */
+}
+	
+/* Display Dropdowns on Hover */
+nav ul li:hover > ul {
+	display:inherit;
+}
+	
+/* Fisrt Tier Dropdown */
+nav ul ul li {
+	width:170px;
+	float:none;
+	display:list-item;
+	position: relative;
+}
+
+/* Second, Third and more Tiers	*/
+nav ul ul ul li {
+	position: relative;
+	top:-60px; 
+	left:170px;
+</style>
+<body>
+<header>
+<p>
+<div id="container">
+    <nav>
+        <ul>
+<li><img src="RanchosLogo.jpg" alt="logo" width="100" height="45"></li>
+             <li><a href="#"><a href="Homepage.html">Home</a></a></li>
+                   <li><a href="#"><a href="MENU.html">Menu</a></A></a>
+            <ul>
+
+                <ul>
+
+                        <ul>
+
+                        </ul>
+                    </li>
+                </ul>
+                </li>
+            </ul>
+            </li>
+             <li><a href="#"><a href="Gallery.html">Gallery</a></A> </a></li>
+            <li><a href="#"><A HREF="index1.html"><a href="#"><a href="OurStaff.html">Our Staff</a></A></a></li>
+
+        </ul>
+    </nav>
+
+</div>
+</p>
+</header>
+
+  
+<!-- Header with image -->
+<header class="bgimg w3-display-container w3-grayscale-min" id="home">
+<img src="Chaf-Pozi-3.jpg" class="" style="width:100%;" id="myMapb">
+
+  <div class="w3-display-bottomleft w3-padding">
+    <span class="w3-tag w3-xlarge">Open from 7am to 5pm</span>
+  </div>
+  <div class="w3-display-middle w3-center">
+    <span class="w3-text-red w3-hide-small" style="font-size:200px">Satisfy <br>your  HUNGER </span>
+    <span class="w3-text-black w3-hide-large w3-hide-medium" style="font-size:100px"><b>thin<br>CRUST PIZZA</b></span>
+    <p><a href="#menu" class="w3-button w3-xxlarge w3-black">What on the Menu</a></p>
+  </div>
+</header>
+
+<!-- Menu Container -->
+<div class="w3-container w3-black w3-padding-64 w3-xxlarge" id="menu">
+  <div class="w3-content">
+  
+    <h1 class="w3-center w3-jumbo" style="margin-bottom:64px">OUR  MENU</h1>
+    <div class="w3-row w3-center w3-border w3-border-dark-grey">
+      <a href="javascript:void(0)" onclick="openMenu(event, 'Pizza');" id="myLink">
+        <div class="w3-col s4 tablink w3-padding-large w3-hover-red">Starter</div>
+      </a>
+      <a href="javascript:void(0)" onclick="openMenu(event, 'Pasta');">
+        <div class="w3-col s4 tablink w3-padding-large w3-hover-red">Supa Lunch</div>
+      </a>
+      <a href="javascript:void(0)" onclick="openMenu(event, 'Starter');">
+        <div class="w3-col s4 tablink w3-padding-large w3-hover-red">Kasi Food</div>
+      </a>
+    </div>
+
+    <div id="Pizza" class="w3-container menu w3-padding-32 w3-white ">
+      <h1><b>Pie </b> <span class="w3-right w3-tag w3-dark-grey w3-round">R17.50</span></h1>
+      <p class="w3-text-grey">Flavors: Chicken & Mushroom , Veg , Steake & Kidney</p>
+      <hr>
+   
+      <h1><b>Koeksisters</b> <span class="w3-right w3-tag w3-dark-grey w3-round">R20.00</span></h1>
+      <p class="w3-text-grey">Served with: Tea, sugary syrup</p>
+      <hr>
+      
+      <h1><b>Chicken Satay</b> <span class="w3-right w3-tag w3-dark-grey w3-round">R80.00</span></h1>
+      <p class="w3-text-grey">Served with : Fresh tomatoes</p>
+      <hr>
+
+      <h1><b>Biltong</b> <span class="w3-right w3-tag w3-dark-grey w3-round">R50.50</span></h1>
+      <p class="w3-text-grey">BBQ, SPICY PERI PERI, ZESTY GARLIC</p>
+      <hr>
+
+      <h1><b>Gizzard on a Stick</b> <span class="w3-tag w3-red w3-round">Hot!</span><span class="w3-right w3-tag w3-dark-grey w3-round">R20.00</span></h1>
+      <p class="w3-text-grey">Fresh tomatoes</p>
+      <hr>
+
+      <h1><b>Tea</b> <span class="w3-tag w3-grey w3-round">New</span><span class="w3-right w3-tag w3-dark-grey w3-round">R15.00</span></h1>
+      <p class="w3-text-grey">Served with : Fresh Scones</p>
+    </div>
+
+    <div id="Pasta" class="w3-container menu w3-padding-32 w3-white">
+      <h1><b>Vetkoek (amagwinya)
+</b> <span class="w3-tag w3-grey w3-round">Popular</span> <span class="w3-right w3-tag w3-dark-grey w3-round">R10.50</span></h1>
+      <p class="w3-text-grey">Served with cheese or polony</p>
+      <hr>
+   
+      <h1><b>Bunny Chow</b> <span class="w3-right w3-tag w3-dark-grey w3-round">R40.00</span></h1>
+      <p class="w3-text-grey"></p>
+      <hr>
+      
+      <h1><b>Gatsby Sandwich </b> <span class="w3-right w3-tag w3-dark-grey w3-round">R20.00</span></h1>
+      <p class="w3-text-grey">Fresh tomatoes, onions, ground beef</p>
+      <hr>
+
+      <h1><b>Quarter Chicken</b> <span class="w3-right w3-tag w3-dark-grey w3-round">R40.00</span></h1>
+      <p class="w3-text-grey">Served with chips + Cold drink </p>
+    </div>
+
+
+    <div id="Starter" class="w3-container menu w3-padding-32 w3-white">
+      <h1><b>Amadumbe</b> <span class="w3-tag w3-grey w3-round">Seasonal</span><span class="w3-right w3-tag w3-dark-grey w3-round">R5.50</span></h1>
+      <p class="w3-text-grey">Ask the waiter</p>
+      <hr>
+   
+      <h1><b>Uphuthu </b> <span class="w3-right w3-tag w3-dark-grey w3-round">R25.00</span></h1>
+      <p class="w3-text-grey">Served with beef or chicken carry </p>
+      <hr>
+      
+      <h1><b>Shisa Nyama (Chicken dust)</b> <span class="w3-right w3-tag w3-dark-grey w3-round">R15.00</span></h1>
+      <p class="w3-text-grey">Served with any sauce of your favorite </p>
+      <hr>
+      
+      <h1><b>Chicken feets </b> <span class="w3-right w3-tag w3-dark-grey w3-round">R6.00</span></h1>
+      <p class="w3-text-grey">Served with any sauce of your favorite</p>
+    </div><br>
+
+  </div>
+</div>
+
+<!-- About Container -->
+<div class="w3-container w3-padding-64 w3-red w3-grayscale w3-xlarge" id="Call RANCHOS to cater  your service...">
+  <div class="w3-content">
+    <h1 class="w3-center w3-jumbo" style="margin-bottom:64px">Ranchos Catering Services </h1>
+    <p>We don't just serve the best we serve the excellent . Ranchos catering services is affordable  and will satisfy all your needs. Don't hesitate call Ranchos for a quote.</p>
+    <p><strong>The Chef?</strong> Mr. Korora himself<img src="chef.jpg" style="width:150px" class="w3-circle w3-right" alt="Chef"></p>
+    <p>We are proud of our interiors.</p>
+    <img src="Chaf-Pozi-3.jpg" style="width:100%" class="w3-margin-top w3-margin-bottom" alt="Restaurant">
+    <h1><b>Excellence is who we are</b></h1>
+    
+    <div class="w3-row">
+      <div class="w3-col s6">
+        <p>Mon & Tue 7.00 - 17.00</p>
+        <p>Wednesday 8.00 - 17.00</p>
+        <p>Thursday 8:00 - 17:00</p>
+      </div>
+      <div class="w3-col s6">
+        <p>Friday 8:30 - 16:00</p>
+        <p>Saturday 10:00 - 14:00</p>
+        <p>Sunday Closed</p>
+      </div>
+    </div>
+    
+  </div>
+</div>
+
+<!-- Image of location/map -->
+<img src="mnandi.jpg" class="w3-image w3-greyscale" style="width:100%;" id="myMap">
+
+
+
+
+<script>
+// Tabbed Menu
+function openMenu(evt, menuName) {
+  var i, x, tablinks;
+  x = document.getElementsByClassName("menu");
+  for (i = 0; i < x.length; i++) {
+     x[i].style.display = "none";
+  }
+  tablinks = document.getElementsByClassName("tablink");
+  for (i = 0; i < x.length; i++) {
+     tablinks[i].className = tablinks[i].className.replace(" w3-red", "");
+  }
+  document.getElementById(menuName).style.display = "block";
+  evt.currentTarget.firstElementChild.className += " w3-red";
+}
+document.getElementById("myLink").click();
+</script>
+
+</body>
+</html>
+
+
